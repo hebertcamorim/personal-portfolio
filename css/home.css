@@ -44,7 +44,7 @@
 .content .bio .btn:hover {
     background-color: var(--botton-color-hover);
     border: none;
-    filter: drop-shadow(0 0 80px rgba(21, 193, 150, 0.8));
+    filter: drop-shadow(0 0 5rem rgba(21, 193, 150, 0.8));
     transition: 1s ease-in;
 }
 
@@ -65,19 +65,19 @@
 
 @keyframes float {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0rem);
     }
     50% {
-      transform: translateY(80px);
+      transform: translateY(5rem);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(0rem);
     }
 }
     
 .front {
     position: absolute;
-    filter: drop-shadow(0 0 30px rgba(21, 193, 150, 0.8));
+    filter: drop-shadow(0 0 1.875rem rgba(21, 193, 150, 0.8));
 }
     
 .front img:hover {

@@ -11,6 +11,7 @@
     padding: 0 3.75rem;
     background-color: var(--primary-color);
     border-bottom: 0.125rem solid var(--border-color);
+    z-index: 99;
 }
 
 .header .custom-title {
@@ -23,7 +24,7 @@
 }
 
 .header:hover {
-    filter: drop-shadow(0 0 80px rgba(21, 193, 150, 0.8));
+    filter: drop-shadow(0 0 5rem rgba(21, 193, 150, 0.8));
     transition: 1s ease-in;
 }
 

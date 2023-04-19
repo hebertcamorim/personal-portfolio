@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/certifications.css">
-
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/toast.css">
 
     <title></title>
 </head>
@@ -89,8 +91,8 @@
         <div class="content-certifications">               
             <div class="trail-card">
                 <img src="image/front-end.svg" alt="">
-                <h2>Trilha</h2>
-                <h3>Iniciante em Desenvolvimento Web</h3>
+                <h3>Trilha</h3>
+                <h2>Iniciante em Desenvolvimento Web</h2>
                 <ul>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=3fa27207-1038-4765-8144-32574e2f9be2" target="_blank">HTML Básico.</a></li>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=bffd2458-ce2d-44da-9a90-e0edc080ba11" target="_blank">CSS Básico.</a></li>
@@ -101,8 +103,8 @@
 
             <div class="trail-card">
                 <img src="image/react.svg" alt="">
-                <h2>Trilha</h2>
-                <h3>Desenvolvedor React</h3>
+                <h3>Trilha</h3>
+                <h2>Desenvolvedor React</h2>
                 <ul>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=8bec26f3-46ff-4c0d-94ec-121769908881" target="_blank">Iniciando com React.js.</a></li>
                     <li><a href="" class="inactive" target="_blank">Redux Forms.</a></li>
@@ -114,8 +116,8 @@
 
             <div class="trail-card">
                 <img src="image/node.svg" alt="">
-                <h2>Trilha</h2>
-                <h3>Node Iniciante</h3>
+                <h3>Trilha</h3>
+                <h2>Node Iniciante</h2>
                 <ul>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=c67912d4-2945-49cc-a9ae-c10cd48d34cd" target="_blank">Iniciando com Javascript.</a></li>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=ee11b8e0-1d98-4c7d-8cee-52e309b26d5a" target="_blank">Javascript Avançado.</a></li>
@@ -128,8 +130,8 @@
 
             <div class="trail-card">
                 <img src="image/java.svg" alt="">
-                <h2>Trilha</h2>
-                <h3>Java Essencial</h3>
+                <h3>Trilha</h3>
+                <h2>Java Essencial</h2>
                 <ul>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=80b7eb29-d6dd-4e79-9d6e-f9b09b72e78b" target="_blank">Iniciando com Java.</a></li>
                     <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=44b568eb-c31c-4d0b-a06c-e94384a09758" target="_blank">OOP com Java.</a></li>
@@ -144,7 +146,115 @@
         </div>     
 
     </section>
+
+    <section id="skills">
+        <div class="container-skills">
+            <div class="title-skill">
+                <h2>Minhas <span>SKILLS</span></h2>
+            </div>
+            <h2 class="bg-skill">SKILLS</h2>
+            <div class="content-skills">
+                <div class="text-skills">
+                    <span>HTML</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="bars">
+                    <div class="progress">
+                        <div class="progress-bar" id="progress-bar-html"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="progress-bar-css"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="progress-bar-javascript"></div>
+                    </div>
+                </div>
+             
+                <div class="percentage">
+                    <span class="html-progress"></span>    
+                    <span class="css-progress"></span>
+                    <span class="javascript-progress"></span>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container-contact">
+            <div class="contact-text">
+                <h2>Entre em <span>Contato</span></h2>
+                <p>
+                    Gostaria de ajudá-lo(a) no desenvolvimento do seu site,
+                    fornecendo soluções personalizadas para atender às suas necessidades.
+                    Se você deseja criar um site atraente uma presença on-line forte 
+                    e profissional que atenda seus objetivos de negócios fale comigo.
+                </p>
+            </div>
+        <div class="content-contact">
+            <div class="personal-data">
+                <div class="contact-title">
+                    <h2>Obtenha respostas e conselhos profissionais.</h2>
+                </div>
+                <div class="address">
+                    <h3><img src="image/address.svg"> Address</h3>
+                    <span>1800 Lester Street, Los Santos, CA 15324</span>
+                </div>
+                <div class="phone">
+                    <h3><img src="image/phone.svg"> Phone</h3>
+                    <span>+55 (16) 99256-7899</span>
+                </div>
+                <div class="hello">
+                    
+                    <h3><img src="image/email.svg"> Say Hello</h3>
+                    <span>a.hebertcesar@gmail.com</span>
+                    </div>
+                </div>
+                <div class="form-contact">
+                    <form>
+                        <input type="text" id="client" name="client" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                        <textarea class="" name="message" placeholder="Message"></textarea>
+                        <button class="btn" onclick="showToast()">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast"></div>
+
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/hebert-cesar-amorim" target="_blank">
+                    <img src="image/linkedin.svg" alt="">
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img class="" src="image/twitter.svg" alt="">
+                </a>
+                
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="" src="image/facebook.svg" alt="">
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="" src="image/instagram.svg" alt="">
+                </a>
+
+                <a href="https://wa.me/+5516992567899" target="_blank">
+                    <img class="" src="image/whatsapp.svg" alt="">
+                </a>
+            </div>
+            <div class="copyright">
+                <h3>Copyright © <span>Hebert César Amorim</span></h3>
+            </div>
+        </footer>
+    </section>
     <script src="js/settings.js"></script>
     <script src="js/download.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/toastmessage.js"></script>
 </body>
 </html>
