@@ -1,0 +1,80 @@
+#certifications {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.title {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title .custom-color {
+    color: var(--custom-color);
+}
+
+.content-certifications {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trail-card {
+    text-align: center;
+    padding: 0 1.25rem;
+    width: 18.75rem;
+    height: 31.25rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px black;
+    border-radius: 0.75rem;
+    margin: 0 1.25rem;
+}
+
+.trail-card:hover {
+    transform: scale(1.1);
+    transition: 500ms ease;
+}
+
+.trail-card:not(:hover) {
+    transition: 1s ease;
+}
+
+.trail-card img {
+    margin: 2.5rem 0 1.25rem 0;
+}
+
+.trail-card h2 {
+    color: var(--primary-color)
+}
+
+.trail-card h3 {
+    color: var(--second-color)
+}
+
+.trail-card ul {
+    margin-top: 1.25rem;
+    list-style: none;
+}
+
+.trail-card li {
+    padding: 0.25rem 0;
+}
+
+.trail-card a {
+    text-decoration: none;
+    color: var(--custom-color);
+}
+
+.trail-card a:hover {
+    font-weight: bold;
+}
+
+.trail-card .inactive {
+    pointer-events: none;
+    color: grey;
+}

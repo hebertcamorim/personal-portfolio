@@ -1,0 +1,53 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0 3.75rem;
+    background-color: var(--primary-color);
+    border-bottom: 0.125rem solid var(--border-color);
+}
+
+.header .custom-title {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.header .tag, .io {
+    color: var(--custom-color);
+}
+
+.header:hover {
+    filter: drop-shadow(0 0 80px rgba(21, 193, 150, 0.8));
+    transition: 1s ease-in;
+}
+
+.header:not(:hover) {
+    transition: 1s;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.menu li {
+    padding-right: 2.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu a:hover {
+    color: var(--text-color-hover);
+    transition: 500ms ease;
+}
