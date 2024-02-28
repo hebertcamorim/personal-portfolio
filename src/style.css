@@ -1,0 +1,313 @@
+:root {
+    --main-color: rgb(50, 0, 190);
+    --secondary-color: rgba(230, 0, 196, 1);
+    --highlight-color: rgb(0, 194, 204);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 12px;
+    background: linear-gradient(35deg, var(--main-color) 0%, var(--secondary-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3200be", endColorstr="#e600c4", GradientType=1);
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+.container.background {
+    background: linear-gradient(230deg, var(--main-color) 0%, var(--secondary-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3200be", endColorstr="#e600c4", GradientType=1);
+    box-shadow: 0 0 1.938rem -.063rem rgba(0, 0, 0, 0.81);  
+}
+
+.first-section {
+    width: 40%;
+    height: 100%;
+    padding: 0 4%;
+}
+
+.first-section .logo {
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.first-section .logo h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.first-section .empty {
+    display: flex;
+    align-items: center;
+    height: 8%;
+}
+
+.first-section .title {
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.first-section .title h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 2.375rem rgba(76, 14, 245, 1)
+}
+
+.first-section .sub-title {
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.first-section .sub-title span {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.first-section .notice {
+    display: flex;
+    align-items: center;
+    height: 34%;
+}
+
+.first-section .notice p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.first-section .notice a {
+    text-decoration: none;
+    color: rgb(174, 190, 220);
+}
+
+.first-section .notice a:hover {
+    cursor: pointer;
+    color: rgb(0, 194, 204);
+}
+
+.first-section .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    height: 12%;
+}
+
+.first-section .social-icons img {
+    width: 120%;
+    padding-right: 2.5rem;
+}
+
+.second-section {
+    width: 60%;
+    height: 100%;
+    padding: 0 4%;
+}
+
+.second-section .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10%;
+}
+
+.second-section .menu ul {
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.second-section .menu li {
+    margin: 0 1.25rem;
+}
+
+.second-section .menu li a {
+    padding-bottom: .625rem;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid .188rem transparent;
+}
+
+.second-section .menu li a:hover {
+    border-bottom: solid .188rem var(--highlight-color);
+}
+
+.second-section .picture {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 78%;
+}
+
+.second-section .picture img {
+    margin: 2.5rem 0 0 2.5rem;
+    width: 74%;
+}
+
+.second-section .footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 12%;
+}
+
+.second-section .footer span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.second-section .footer .text-color {
+    color: var(--highlight-color);
+}
+
+@media only screen and (max-width: 37.5rem) {
+    body {
+        height: 200vh;
+        font-size: 12px;
+    }
+
+    .container.background {
+        background: transparent;
+        filter: none;
+        box-shadow: 0 0 1.938rem -.063rem rgba(0, 0, 0, 0);  
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 98%;
+    }
+
+    .first-section.background {
+        background: linear-gradient(230deg, var(--main-color) 0%, var(--secondary-color) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3200be", endColorstr="#e600c4", GradientType=1);
+        box-shadow: 0 0 1.938rem -.063rem rgba(0, 0, 0, 0.81);  
+    }
+
+    .first-section {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .first-section .logo {
+        height: 8%;
+    }
+
+    .first-section .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .first-section .empty {
+        height: 6%;
+    }
+
+    .first-section .title {
+        height: 10%;
+    }
+
+    .first-section .title h1 {
+        font-size: 2.4rem;
+    }
+
+    .first-section .sub-title {
+        height: 5%;
+    }
+
+    .first-section .sub-title span {
+        font-size: 0.85rem;
+    }
+
+    .first-section .notice {
+        height: 35%;
+    }
+
+    .first-section .notice p {
+        font-size: 1rem;
+    }
+
+    .first-section .social-icons {
+        height: 10%;
+        margin-left: 1.125rem;
+    }
+
+    .first-section .social-icons img {
+        width: 140%;
+    }
+
+    .second-section.background {
+        background: linear-gradient(230deg, var(--main-color) 0%, var(--secondary-color) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3200be", endColorstr="#e600c4", GradientType=1);
+        box-shadow: 0 0 1.938rem -.063rem rgba(0, 0, 0, 0.81);  
+    }
+
+    .second-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-section .menu {
+        height: 30%;
+    }
+
+    .second-section .menu ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        margin-top: 1.875rem;
+    }
+
+    .second-section .menu ul li {
+        text-align: center;
+        padding: .625rem;
+        margin: .625rem;
+        width: 6.25rem;
+        height: 1.875rem;
+        border-radius: 1.875rem;
+        background-color: var(--highlight-color);
+    }
+
+    .second-section .picture {
+        height: 60%;
+    }
+
+    .second-section .picture img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .second-section .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+    }
+
+    .second-section .footer span {
+        font-size: 1.1rem;
+    }
+}

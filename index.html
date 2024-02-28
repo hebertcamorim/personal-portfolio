@@ -1,260 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/certifications.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/toast.css">
 
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@300..700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/style.css">
+    <title>My Portfolio</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="custom-title">
-            <span class="tag"></span>
-            <span class="text"></span>
-            <span class="io"></span>
-        </h1> 
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    <section id="home">
-        <div class="content">
-            <div class="bio">
-                <h2>Hello,</h2>
-                <h1>I'm <span class="user"></span>,</h1>
-                <h2>Front End Developer</h2>
-                <span>
-                    Sou um estudante de desenvolvimento front-end apaixonado por tecnologia.
-                    Fascinado em mudar o mundo, tornando-o mais conectado, eficiente e acessível.
-                    Sempre busco maneiras de melhorar minhas habilidades e ampliar meu conhecimento.
-                    Dedico horas de estudo e pratica, trabalhando em projetos pessoais.
-                    Em resumo, estou animado para continuar minha jornada como estudante de
-                    desenvolvimento front-end esperando a oportunidade de aplicar minhas
-                    habilidades e conhecimento em projetos futuros.
-                </span>
-                <button class="btn" onclick="downloadFile()">Download CV</button>
+    <div class="container background">
+        <section class="first-section background">
+            <div class="logo">
+                <h2><span class="tag custom-color"></span> Personal Portfolio</h2>
             </div>
-            <div class="card">
-                <div class="float">
-                    <div class="front">
-                        <img src="image/front-card.png">
-                    </div>
-                    <div class="back">
-                        <img class="back" src="image/back-card.png">
-                    </div>
-                </div>
+            <div class="empty"></div>
+            <div class="title">
+                <h1>MANUTENÇÃO</h1>
             </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="content">
-            <div class="image">
-                <img src="image/undraw.svg" alt="">
+            <div class="sub-title">
+                <span>FIQUE TRANQUILO, LOGO ESTAREMOS DE VOLTA</span>
             </div>
-            <div class="about-me">
-                <h1>About <span class="custom-color">Me</span></h1>
-                <h2>Sempre em busca de novos desafios.</h2>
+            <div class="empty"></div>
+            <div class="notice">
                 <p>
-                    Olá, sou um estudante de desenvolvimento front-end apaixonado por tecnologia
-                    e uma vontade inabalável por crescimento profissional.
-                    Estou animado com a possibilidade de trabalhar com uma equipes de desenvolvimento
-                    front-end para adquirir conhecimentos e me tornar um profissional da área.
-                    Tenho conhecimentos em HTML, CSS e JavaScript e grande interesse em acompanhar
-                    as tendências do mercado de tecnologia, bem como explorar novas ferramentas
-                    e metodologias.
-                    Acredito que minha determinação, habilidades técnicas e paixão pelo
-                    desenvolvimento front-end podem ser um grande diferencial. 
-                    Estou animado com oportunidades para adição de valor à equipe.
+                    Olá, <br> Estamos realizando algumas melhorias para aprimorar a sua experiência. Nossa página está passando por manutenção neste momento, mas estaremos de volta em breve.
+                    Agradecemos pela sua paciência e compreensão. Enquanto isso, se precisar entrar em contato conosco, não hesite em enviar um e-mail para
+                    <a href="mailto:a.hebertcesar@gmail.com"><strong>a.hebertcesar@gmail.com</strong></a>.
+                    Obrigado por fazer parte da nossa comunidade!
                 </p>
             </div>
-        </div>
-    </section>
+            <div class="empty"></div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hebert-amorim/" target="_blank" rel="noopener"><img src="./src/image/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/hebertcamorim" target="_blank" rel="noopener"><img src="./src/image/github.svg" alt="GitHub"></a>
+                <a href="#" target="_blank" rel="noopener"><img src="./src/image/youtube.svg" alt="YouTube"></a>
+                <a href="https://wa.me/+5516992567899" target="_blank" rel="noopener"><img src="./src/image/whatsapp.svg" alt="WhatsApp"></a>
+                <a href="#" target="_blank" rel="noopener"><img src="./src/image/discord.svg" alt="Discord"></a>
+            </div>
+        </section>
 
-    <section id="certifications">
-        <div class="title">
-            <h1>Algumas <span class="custom-color">CERTIFICAÇÕES</span></h1>
-        </div>
-        <div class="content-certifications">               
-            <div class="trail-card">
-                <img src="image/front-end.svg" alt="">
-                <h3>Trilha</h3>
-                <h2>Iniciante em Desenvolvimento Web</h2>
+        <section class="second-section background">
+            <div class="menu">
                 <ul>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=3fa27207-1038-4765-8144-32574e2f9be2" target="_blank">HTML Básico.</a></li>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=bffd2458-ce2d-44da-9a90-e0edc080ba11" target="_blank">CSS Básico.</a></li>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=935f96ae-3ea0-4159-a31d-58c8784db558" target="_blank">CSS3</a></li>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=c67912d4-2945-49cc-a9ae-c10cd48d34cd" target="_blank">Iniciando com Javascript.</a></li>
+                    <li><a href="" class="button">Home</a></li>
+                    <li><a href="" class="button">Sobre</a></li>
+                    <li><a href="" class="button">Certificações</a></li>
+                    <li><a href="" class="button">Skill's</a></li>
+                    <li><a href="" class="button">Contato</a></li>
+                    <li><a href="" class="button">Blog</a></li>
                 </ul>
             </div>
-
-            <div class="trail-card">
-                <img src="image/react.svg" alt="">
-                <h3>Trilha</h3>
-                <h2>Desenvolvedor React</h2>
-                <ul>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=8bec26f3-46ff-4c0d-94ec-121769908881" target="_blank">Iniciando com React.js.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Redux Forms.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Iniciando com Redux.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Redux Thunks.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Redux Sauce.</a></li>
-                </ul>
+            <div class="picture">
+                <img src="./src/image/picture.svg" alt="Profile Picture">
             </div>
-
-            <div class="trail-card">
-                <img src="image/node.svg" alt="">
-                <h3>Trilha</h3>
-                <h2>Node Iniciante</h2>
-                <ul>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=c67912d4-2945-49cc-a9ae-c10cd48d34cd" target="_blank">Iniciando com Javascript.</a></li>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=ee11b8e0-1d98-4c7d-8cee-52e309b26d5a" target="_blank">Javascript Avançado.</a></li>
-                    <li><a href="" class="inactive" target="_blank">OOP com Javascript - ES5.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Node.js Básico.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Node com Express.js.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Iniciando com MongoDB.</a></li>
-                </ul>
+            <div class="footer">
+                <span>Copyright © <span class="text-color">Hebert César Amorim</span></span>
             </div>
+        </section>
+    </div>
 
-            <div class="trail-card">
-                <img src="image/java.svg" alt="">
-                <h3>Trilha</h3>
-                <h2>Java Essencial</h2>
-                <ul>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=80b7eb29-d6dd-4e79-9d6e-f9b09b72e78b" target="_blank">Iniciando com Java.</a></li>
-                    <li><a href="http://www.schoolofnet.com/validar-certificado/?certificate=44b568eb-c31c-4d0b-a06c-e94384a09758" target="_blank">OOP com Java.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Estrutura de dados com Java.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Api's Nativas no Java</a></li>
-                    <li><a href="" class="inactive" target="_blank">Java com JDBC.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Java Swing.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Iniciando com Java FX.</a></li>
-                    <li><a href="" class="inactive" target="_blank">Java 8.</a></li>
-                </ul>
-            </div>
-        </div>     
-
-    </section>
-
-    <section id="skills">
-        <div class="container-skills">
-            <div class="title-skill">
-                <h2>Minhas <span>SKILLS</span></h2>
-            </div>
-            <h2 class="bg-skill">SKILLS</h2>
-            <div class="content-skills">
-                <div class="text-skills">
-                    <span>HTML</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-
-                <div class="bars">
-                    <div class="progress">
-                        <div class="progress-bar" id="progress-bar-html"></div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" id="progress-bar-css"></div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" id="progress-bar-javascript"></div>
-                    </div>
-                </div>
-             
-                <div class="percentage">
-                    <span class="html-progress"></span>    
-                    <span class="css-progress"></span>
-                    <span class="javascript-progress"></span>    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container-contact">
-            <div class="contact-text">
-                <h2>Entre em <span>Contato</span></h2>
-                <p>
-                    Gostaria de ajudá-lo(a) no desenvolvimento do seu site,
-                    fornecendo soluções personalizadas para atender às suas necessidades.
-                    Se você deseja criar um site atraente uma presença on-line forte 
-                    e profissional que atenda seus objetivos de negócios fale comigo.
-                </p>
-            </div>
-        <div class="content-contact">
-            <div class="personal-data">
-                <div class="contact-title">
-                    <h2>Obtenha respostas e conselhos profissionais.</h2>
-                </div>
-                <div class="address">
-                    <h3><img src="image/address.svg"> Address</h3>
-                    <span>1800 Lester Street, Los Santos, CA 15324</span>
-                </div>
-                <div class="phone">
-                    <h3><img src="image/phone.svg"> Phone</h3>
-                    <span>+55 (16) 99256-7899</span>
-                </div>
-                <div class="hello">
-                    
-                    <h3><img src="image/email.svg"> Say Hello</h3>
-                    <span>a.hebertcesar@gmail.com</span>
-                    </div>
-                </div>
-                <div class="form-contact">
-                    <form action="">
-                        <input type="text" id="client" name="client" placeholder="Name">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="tel" id="phone" name="phone" placeholder="Phone">
-                        <textarea class="" name="message" placeholder="Message"></textarea>
-                        <button class="btn" onclick="showToast()">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="toast"></div>
-
-        <footer class="footer">
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/hebert-césar-amorim" target="_blank">
-                    <img src="image/linkedin.svg" alt="">
-                </a>
-
-                <a href="https://www.twitter.com/" target="_blank">
-                    <img class="" src="image/twitter.svg" alt="">
-                </a>
-                
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="" src="image/facebook.svg" alt="">
-                </a>
-
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="" src="image/instagram.svg" alt="">
-                </a>
-
-                <a href="https://wa.me/+5516992567899" target="_blank">
-                    <img class="" src="image/whatsapp.svg" alt="">
-                </a>
-            </div>
-            <div class="copyright">
-                <h3>Copyright © <span>Hebert César Amorim</span></h3>
-            </div>
-        </footer>
-    </section>
-    <script src="js/settings.js"></script>
-    <script src="js/download.js"></script>
-    <script src="js/progress_bar.js"></script>
-    <script src="js/toastmessage.js"></script>
+    <script src="./src/js/logo.js"></script>
 </body>
+
 </html>
